@@ -1,0 +1,87 @@
+<USER_REQUEST>
+# TOPUPERS â€” MASTER IMPLEMENTATION PROMPT
+## Currency Switcher + Payment Methods + Automatic/Manual Exchange Rate
+
+Act as a senior PHP/MySQL developer, payment integration engineer, security engineer, and code reviewer.
+
+I am developing an existing game top-up website called **TopUpers** using PHP, MySQL, Bootstrap, and Antigravity Pro. The project may be running locally through Laragon or XAMPP.
+
+Your task is to inspect and carefully enhance my existing project. Do not rebuild the website from scratch or replace working features unnecessarily.
+
+## 1. CRITICAL RULE: INSPECT BEFORE EDITING
+
+**Phase 1 must be inspection and planning only.**
+
+Before modifying anything:
+
+1. Inspect the complete existing project structure.
+2. Identify the PHP entry points, header/navigation, product pages, product pricing logic, cart, checkout, order creation, payment handling, login/session system, admin panel, database connection, and existing database tables.
+3. Identify the existing coding conventions and Bootstrap version.
+4. Determine how product prices, orders, payment methods, and admin settings currently work.
+5. Identify conflicts with the requested features.
+6. Check whether any currency, payment, or exchange-rate functionality already exists.
+7. Identify the exact files and database tables that would need changes.
+8. Present a step-by-step implementation plan, potential risks, and a list of proposed file/database changes.
+
+**Do not edit, create, delete, rename, or overwrite any project files during Phase 1. Do not execute destructive SQL.**
+
+Stop after presenting the plan and wait for my explicit approval.
+
+After I approve, implement the changes incrementally, making backups before modifying existing files.
+
+## 2. CURRENCY SWITCHER
+
+Add a currency switcher to the existing website header.
+
+Supported currencies:
+
+- BDT â€” Bangladeshi Taka (à§³)
+- USD â€” United States Dollar ($)
+
+Requirements:
+
+- BDT must be the default currency.
+- Do not add country selection or IP
+<truncated 17680 bytes>
+- Implement caching, validation, freshness checks, logging, and optional buffer.
+- Implement the scheduled refresh task and document setup.
+
+**Phase 5 â€” Checkout and payment methods**
+- Implement the appropriate BDT payment methods.
+- Implement configurable Binance Pay ID/UID or QR manual verification.
+- Preserve existing gateway functionality.
+- Implement immutable order price snapshots.
+
+**Phase 6 â€” Testing and handover**
+- Run relevant tests.
+- Fix any regressions introduced by the changes.
+- Summarize the final implementation.
+- Document configuration and deployment steps.
+
+If a phase depends on unavailable credentials, account eligibility, hosting features, or third-party approval, complete the safe independent parts and clearly explain what remains blocked. Do not fabricate credentials or claim unverified integration success.
+
+## 13. REQUIRED FINAL REPORT
+
+After each approved implementation phase, report:
+
+1. What was completed.
+2. Exact files created or modified.
+3. Database tables or columns changed.
+4. Backup and migration details.
+5. Tests actually performed and their results.
+6. Remaining issues or missing credentials.
+7. Any required manual setup.
+8. The next recommended step.
+
+## FINAL INSTRUCTION
+
+**Start with Phase 1 only. Inspect the existing TopUpers project and present your findings and implementation plan. Do not modify any files until I explicitly approve the plan.**
+
+Use the existing project wherever possible. Preserve working functionality, avoid unnecessary rewrites, prioritize security, and never claim an integration or test is complete without evidence.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-11T22:29:45+06:00.
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Gemini 3.8 Flash (High). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
